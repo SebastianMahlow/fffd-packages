@@ -18,7 +18,6 @@ local function configure_iface(radio, config)
             network = 'client',
             mode = 'ap',
             ssid = alias,
-            ifname = '',
         }
     )
     end
