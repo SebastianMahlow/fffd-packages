@@ -14,6 +14,7 @@ local function configure_iface(radio, config)
     uci:delete('wireless', client)
     uci:section('wireless', 'wifi-iface', client,
         {
+            ifname = radio,
             device = radio,
             network = 'client',
             mode = 'ap',
